@@ -2,6 +2,7 @@ package controllers;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.TreeMap;
 import models.Empleado;
 
 public class Mapa {
@@ -15,7 +16,7 @@ public class Mapa {
         capitales.put("Peru", "Lima");
         capitales.put("Colombia", "Bogota");
 
-        System.out.println("Mapa de capitales");
+        System.out.println("Mapa de capitales HASH MAP");
         for(String pais : capitales.keySet()){
             System.out.println("Pais: " + pais + ", Capital: " + capitales);
         }
@@ -51,7 +52,6 @@ public class Mapa {
         for(Map.Entry<Empleado, Integer> entry : empleadoDos.entrySet()){
             System.out.println(entry.getKey() + " => " + entry.getValue());
         }
-
     }
 
     public void ejemploConLinkedHashMap(){
@@ -69,16 +69,37 @@ public class Mapa {
     }
 
     public void ejemploConTreeMap(){
-        LinkedHashMap<Integer, String> persona = new LinkedHashMap<>();
+        TreeMap<Integer, String> persona = new TreeMap<>();
         persona.put(123, "Dayana");
         persona.put(456, "Mateo");
         persona.put(789, "Martin");
         persona.put(159, "Erika");
         persona.put(753, "Lorena");
 
-        System.out.println("\nLista de personas:");
+        System.out.println("\nTREE MAP");
+        System.out.println("Lista de personas:");
         for (Map.Entry<Integer, String> entry : persona.entrySet()) {
             System.out.println("Cédula = " + entry.getKey() + ", Nombre = " + entry.getValue());
         }
+
+        System.out.println("\n");
+
+        TreeMap<Empleado, Integer> empleadoDos = new TreeMap<>();
+        Empleado emp1 = new Empleado(1, "Ana", "Dev");
+        Empleado emp2 = new Empleado(2, "Pedro", "Dev");
+        Empleado emp3 = new Empleado(3, "Ana", "Dev");
+        Empleado emp4 = new Empleado(3, "Ana", "Dev");
+
+        empleadoDos.put(emp1, 1000);
+        empleadoDos.put(emp2, 1200); 
+        empleadoDos.put(emp3, 1500);
+        empleadoDos.put(emp4, 2000);
+
+        for(Map.Entry<Empleado, Integer> entry : empleadoDos.entrySet()){
+            System.out.println(entry.getKey() + " => " + entry.getValue());
+        }
+
+        System.out.println("\nResultados de compareTo():");
+        System.out.printf("%s.compareTo(%s) = %d%n", emp3, emp4, emp3.compareTo(emp4));
     }
 }
