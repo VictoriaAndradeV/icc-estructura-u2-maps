@@ -1,8 +1,4 @@
-import controllers.Ejercicios;
-import controllers.EmpleadoContoller;
 import controllers.Mapa;
-
-import models.Empleado;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -22,7 +18,10 @@ public class App {
     }
 
     private static void runMapExamlpe() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        Mapa mapa = new Mapa();
+        mapa.ejemploConHashMap();
+        mapa.ejemploConLinkedHashMap();
+        mapa.ejemploConTreeMap();
     }
 
     private static void runEjerccios() {
