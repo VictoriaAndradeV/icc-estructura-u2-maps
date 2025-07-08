@@ -1,3 +1,9 @@
+## Captura del terminal
+Estudiante: Victoria Andrade 
+
+![image](https://github.com/user-attachments/assets/d5633aff-3dbf-4cd2-a3ab-7bfa56fe6c20)
+
+
 # Non-Linear Data Structures 
 
 ## Getting Started
