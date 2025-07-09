@@ -99,7 +99,7 @@ public class Mapa {
             System.out.println(entry.getKey() + " => " + entry.getValue());
         }
 
-        System.out.println("\nResultados de compareTo():");
-        System.out.printf("%s.compareTo(%s) = %d%n", emp3, emp4, emp3.compareTo(emp4));
+        /*System.out.println("\nResultados de compareTo():");
+        System.out.printf("%s.compareTo(%s) = %d%n", emp3, emp4, emp3.compareTo(emp4));*/
     }
 }
