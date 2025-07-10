@@ -1,3 +1,7 @@
+## Captura del terminal. Tarea en clase 09/07/2025
+![image](https://github.com/user-attachments/assets/ed7f09a0-c7c1-4f58-9fca-753514abe741)
+
+
 ## Captura del terminal
 Estudiante: Victoria Andrade 
 
