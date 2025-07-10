@@ -25,7 +25,9 @@ public class EmpleadoDAOTreeMap implements EmpleadoDAO {
 
     @Override
     public void list() {
-        System.out.println(empleados);
+        for (Empleado emp : empleados.keySet()) {
+            System.out.println("Empleado: " + emp);
+        }
+        System.out.println(); // Línea en blanco al final
     }
-
 }

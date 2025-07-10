@@ -3,14 +3,14 @@ package controllers;
 import dao.EmpleadoDAO;
 import models.Empleado;
 
-public class EmpleadoContoller {
+public class EmpleadoController {
 
     //id del mapa
     //valor, empleado
     //mapa tiene clave y valor
     private EmpleadoDAO empleadoDAO;
 
-    public EmpleadoContoller(EmpleadoDAO empleadoDAO) { //inyeccion de dependencia
+    public EmpleadoController(EmpleadoDAO empleadoDAO) { //inyeccion de dependencia
         this.empleadoDAO = empleadoDAO;
     }
 

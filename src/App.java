@@ -1,4 +1,4 @@
-import controllers.EmpleadoContoller;
+import controllers.EmpleadoController;
 import controllers.Mapa;
 import dao.EmpleadoDAO;
 import dao.EmpleadoDAOHashMap;
@@ -16,12 +16,14 @@ public class App {
 
         // Ejecuta los ejercicios de sumatoria y anagramas
         runEjerccios();
+    }
 
+    private static void runEmpleadoExample() {
         EmpleadoDAO empleadoDAOHashMap = new EmpleadoDAOHashMap();
-        EmpleadoContoller empleadoController = new EmpleadoContoller(empleadoDAOHashMap);
+        EmpleadoController empleadoController = new EmpleadoController(empleadoDAOHashMap);
 
         EmpleadoDAO empleadoDAOTreeMap = new EmpleadoDAOTreeMap();
-        EmpleadoContoller empleadoContoller2 = new EmpleadoContoller(empleadoDAOTreeMap);
+        EmpleadoController empleadoContoller2 = new EmpleadoController(empleadoDAOTreeMap);
 
 
         //no tiene un orden especifico al ser hashMap
@@ -47,10 +49,7 @@ public class App {
         empleadoContoller2.agregarEmpleado(emp5);       
         
         empleadoController.listarEmpleado();
-    }
-
-    private static void runEmpleadoExample() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        
     }
 
     private static void runMapExamlpe() {
@@ -61,7 +60,7 @@ public class App {
     }
 
     private static void runEjerccios() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        
 
     }
 }
