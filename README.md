@@ -1,3 +1,9 @@
+Estudiante: Victoria Andrade
+
+## Ejercicios 
+![image](https://github.com/user-attachments/assets/2dd625b1-ea47-40fe-b164-2b958d8e085b)
+
+
 ## Captura del terminal. Tarea en clase 09/07/2025
 ![image](https://github.com/user-attachments/assets/ed7f09a0-c7c1-4f58-9fca-753514abe741)
 
