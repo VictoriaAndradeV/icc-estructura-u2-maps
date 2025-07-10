@@ -1,3 +1,4 @@
+import controllers.Ejercicios;
 import controllers.EmpleadoController;
 import controllers.Mapa;
 import dao.EmpleadoDAO;
@@ -60,7 +61,25 @@ public class App {
     }
 
     private static void runEjerccios() {
-        
+        Ejercicios ejercicios = new Ejercicios();
 
+        System.out.println("Ejercicio: Anagramas");
+        System.out.println("listen y silent " + Ejercicios.areAnagrams("listen", "silent"));
+        System.out.println("hello y bello " + Ejercicios.areAnagrams("hello", "bello"));
+
+        System.out.println("\nEjercicio: Sumatoria");
+
+        int[] resultado = ejercicios.sumatoriaDeDos(new int[] { 9, 2, 3, 6 }, 5);
+        if (resultado != null) {
+            System.out.println("Indices: [" + resultado[0] + " , " + resultado[1] + "]");
+        } else {
+            System.out.println("No se encontró combinación");
+        }
+
+        System.out.println("\nEjercicio: Frecuencia de caracteres");
+        ejercicios.contarCaracteres("hola");
+
+        System.out.println("\nEjercicio: Son Anagramas");
+        System.out.println("roma y amor " + ejercicios.sonAnagramas("roma", "amor"));
     }
 }
